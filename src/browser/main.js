@@ -749,6 +749,20 @@
                 homepage: "http://duskos.org/",
             },
             {
+    id: "windowsnt35",
+    name: "Windows NT 3.5",
+    memory_size: 128 * 1024 * 1024,
+    hda: {
+        url: host + "windowsnt35/.img",
+        size: 300 * 1024 * 1024,
+        async: true,
+        fixed_chunk_size: 256 * 1024,
+        use_parts: true,
+    },
+    state: { url: host + "windowsnt35_state.bin.zst" },
+    mac_address_translation: true,
+            },
+            {
                 id: "windows2000",
                 memory_size: 512 * 1024 * 1024,
                 hda: {
